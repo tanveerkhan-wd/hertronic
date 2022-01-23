@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Notification -HA - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div class="inner-container">
+		<div class="wrapper">
+	        <!-- Sidebar  -->
+	        <nav id="sidebar" class="">
+	            <div class="sidebar-header">
+	                <h3>Hertronic</h3>
+	            </div>
+				<ul class="list-unstyled components">
+	            	 <li class="active">
+	                    <a href="#">
+	                       <img src="assets/images/ic_dashoard_color.png" class="color">
+	                       <img src="assets/images/ic_dashoard.png" class="selected">
+	                        Dashboard
+	                    </a>
+	                </li>
+	                <li>                  
+	                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_menu_color.png" class="color">
+	                       <img src="assets/images/ic_menu.png" class="selected">
+	                        User Management
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                	<a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_cart_color.png" class="color">
+	                       <img src="assets/images/ic_cart.png" class="selected">
+	                        Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                 <li>
+	                	<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_lock_color.png" class="color">
+	                       <img src="assets/images/ic_lock.png" class="selected">
+	                        Ministry Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                <li>
+	                    <a href="#">
+	                       <img src="assets/images/ic_reports_color.png" class="color">
+	                       <img src="assets/images/ic_reports.png" class="selected">
+	                        Report
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="assets/images/ic_logs_color.png" class="color">
+	                       	<img src="assets/images/ic_logs.png" class="selected">
+	                        Logs
+	                    </a>
+	                </li>
+	            </ul>
+			</nav>
+
+	        <!-- Page Content  -->
+	        <div id="content">
+	        	<div class="overlay" onclick="closeOverlay()"></div>
+	            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	                <div class="container-fluid">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+		                        <i class="fas fa-align-left"></i>
+		                        <span>Toggle Sidebar</span>
+		                    </button>
+	                        <ul class="nav navbar-nav ml-auto">
+	                            <li class="nav-item active">
+	                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+	                            </li>
+	                           
+		                        <li class="nav-item dropdown notification_dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <img src="assets/images/ic_bell.png">
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							          <ul>
+							          	<li>
+							          		<p class="noti_pere">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							          		<div class="close_noti">
+							          			<img src="assets/images/ic_close_circle.png">
+							          		</div>
+							          	</li>
+							          	<li>
+							          		<p class="noti_pere">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							          		<div class="close_noti">
+							          			<img src="assets/images/ic_close_circle.png">
+							          		</div>
+							          	</li>
+							          	<li>
+							          		<p class="noti_pere">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							          		<div class="close_noti">
+							          			<img src="assets/images/ic_close_circle.png">
+							          		</div>
+							          	</li>
+							          </ul>
+							        </div>
+							    </li>	
+							    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <div class="profile-cover">
+							          	<img src="assets/images/img7.png">
+							          </div>
+							          <i class="fas fa-chevron-down right-arrow"></i>
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							          <a class="dropdown-item" href="#">Action</a>
+							          <a class="dropdown-item" href="#">Another action</a>
+							          <div class="dropdown-divider"></div>
+							          <a class="dropdown-item" href="#">Something else here</a>
+							        </div>
+							    </li>				    
+
+	                        </ul>
+	                        
+	                    </div>
+	                </div>
+	            </nav>
+				<div class="section">
+	            	<div class="container-fluid">
+	            		<div class="text-right">
+	            			<button class="theme_btn small_btn">All Clear</button>
+	            		</div>
+						<h5 class="title text-center">Notificationse</h5>
+	                    <div class="white_box">
+	                        <div class="notification_container">
+	                        	<div class="noti_single">
+	                        		<div class="noti_pera_img">
+		                        		<p class="noti_pera">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		                        		<div class="close_noti">
+						          			<img src="assets/images/ic_close_circle.png">
+						          		</div>
+						          	</div>
+					          		<div class="text-right date_time_span">
+					          			<span>22/6/2019</span>
+					          			<span>11:29 PM</span>
+					          		</div>
+	                        	</div>
+	                        	<div class="noti_single">
+	                        		<div class="noti_pera_img">
+		                        		<p class="noti_pera">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		                        		<div class="close_noti">
+						          			<img src="assets/images/ic_close_circle.png">
+						          		</div>
+						          	</div>
+					          		<div class="text-right date_time_span">
+					          			<span>22/6/2019</span>
+					          			<span>11:29 PM</span>
+					          		</div>
+	                        	</div>
+	                        </div>
+	                        
+	                    </div>
+	       			</div>
+	            </div>
+	        </div>
+    	</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>

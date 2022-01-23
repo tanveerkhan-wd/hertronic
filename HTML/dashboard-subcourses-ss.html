@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+    <div class="inner-container" id="contents" style="opacity: 0;"> 
+		<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <h3>Hertronic</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+            	 <li class="active">
+                    <a href="#">
+                       <img src="assets/images/ic_dashoard_color.png" class="color">
+                       <img src="assets/images/ic_dashoard.png" class="selected">
+                        Dashboard
+                    </a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+        	<div class="overlay" onclick="closeOverlay()"></div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container-fluid">
+
+                  
+
+                  <!--   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button> -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+	                        <i class="fas fa-align-left"></i>
+	                        <span>Toggle Sidebar</span>
+	                    </button>
+                        <div class="d-none d-md-block">
+                             <div class="dropdown-div">
+                                 <div class="form-group">
+                                    <select class="form-control icon_control dropdown_control">
+                                        <option selected>Select Child</option>
+                                        <option>name</option>
+                                    </select>
+                                </div>                                
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+                            </li>
+                           
+	                        <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <img src="assets/images/ic_bell.png">
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						          <a class="dropdown-item" href="#">Action</a>
+						          <a class="dropdown-item" href="#">Another action</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Something else here</a>
+						        </div>
+						    </li>	
+						    <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <div class="profile-cover">
+						          	<img src="assets/images/img7.png">
+						          </div>
+						          <i class="fas fa-chevron-down right-arrow"></i>
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+						          <a class="dropdown-item" href="#">Action</a>
+						          <a class="dropdown-item" href="#">Another action</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Something else here</a>
+						        </div>
+						    </li>				    
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <div class="section">
+            	<div class="container-fluid">
+            		<div class="row">
+            			<div class="col-md-12">
+                            <div class="d-block d-sm-none">
+                                 <div class="dropdown-div small-device">
+                                    <div class="form-group">
+                                        <select class="form-control icon_control dropdown_control">
+                                            <option selected>Select Child</option>
+                                            <option>name</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-12 mb-3">
+                        <h2 class="title"><span>Grade - 4 > </span> <span>Semester - 1 > </span>  Creation Language </h2>
+                    </div> 
+                    <div class="col-md-12">                           
+                            <div class="row">
+                                <div class="col-lg-12">
+                                   <div class="theme_tab_gray">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true">Periodic Exams</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="Current-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Current" aria-selected="true">Absences</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a class="nav-link" id="Current-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Current" aria-selected="true">Prescheduled Exams</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="graph table-div mt-4">  
+                                                    <div class="table-responsive">
+                                                        <table>
+                                                            <tr>
+                                                                <td>Date</td>
+                                                                <td>Periodic Exam Type</td>
+                                                                <td>Marks</td>
+                                                                <td>Note</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Verbal</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Verbal</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Verbal</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Verbal</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Verbal</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>                        
+                                                            </tr>                                               
+                                                        </table>
+                                                    </div>
+                                                </div>                                                                                                
+                                            </div>
+                                            <div class="tab-pane fade show" id="two" role="tabpanel" aria-labelledby="Current-tab">
+                                                <div class="graph table-div mt-4">  
+                                                    <div class="table-responsive">
+                                                        <table>
+                                                            <tr>
+                                                                <td>Date</td>
+                                                                <td>Hours</td>
+                                                                <td>Lecture</td>
+                                                                <td>It is Justified?</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>
+                                                                <td>Yes</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>
+                                                                <td>Yes</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>
+                                                                <td>Yes</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>
+                                                                <td>Yes</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>4</td>
+                                                                <td>Lorem ipsum dolor sit amet</td>
+                                                                <td>Yes</td>                        
+                                                            </tr>                                     
+                                                        </table>
+                                                    </div>
+                                                </div>                                                   
+                                            </div>
+                                            <div class="tab-pane fade show" id="three" role="tabpanel" aria-labelledby="Current-tab">
+                                                <div class="graph table-div mt-4">  
+                                                    <div class="table-responsive">
+                                                        <table>
+                                                            <tr>
+                                                                <td>Date</td>
+                                                                <td>Periodic Exam Type</td>
+                                                                <td>Hours</td>
+                                                                <td>Shift</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Written</td>
+                                                                <td>4</td>
+                                                                <td>Morning</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Written</td>
+                                                                <td>4</td>
+                                                                <td>Morning</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Written</td>
+                                                                <td>4</td>
+                                                                <td>Morning</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Written</td>
+                                                                <td>4</td>
+                                                                <td>Morning</td>                        
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13/11/2019</td>
+                                                                <td>Written</td>
+                                                                <td>4</td>
+                                                                <td>Morning</td>                        
+                                                            </tr>                                     
+                                                        </table>
+                                                    </div>
+                                                </div>                                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                   
+                            </div>
+                        </div>            			
+            		</div>
+            	</div>
+            </div>
+
+        </div>
+    </div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>

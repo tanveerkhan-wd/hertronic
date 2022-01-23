@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+    <div class="inner-container" id="contents" style="opacity: 0;"> 
+		<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <h3>Hertronic</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+            	 <li class="active">
+                    <a href="#">
+                       <img src="assets/images/ic_dashoard_color.png" class="color">
+                       <img src="assets/images/ic_dashoard.png" class="selected">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="assets/images/ic_attendant-list_color.png" class="color">
+                       <img src="assets/images/ic_attendant-list.png" class="selected">
+                        Student Attendance & Syllabus Accomplishment
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="assets/images/ic_exam_color.png" class="color">
+                       <img src="assets/images/ic_exam.png" class="selected">
+                        Exams
+                    </a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <img src="assets/images/ic_users_color.png" class="color">
+                       <img src="assets/images/ic_users.png" class="selected">
+                        Students
+                        <i class="fas fa-chevron-down right-arrow"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Behaviour</a>
+                        </li>
+                        <li>
+                            <a href="#">Extracurricular Activity</a>
+                        </li>
+                        <li>
+                            <a href="#">Discipline Measure</a>
+                        </li>                        
+                    </ul>                   
+                </li>             
+                       
+                                 
+                 <li>
+                    <a href="#">
+                       <img src="assets/images/ic_business_color.png" class="color">
+                       <img src="assets/images/ic_business.png" class="selected">
+                        PTM
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="assets/images/ic_attendant-list_color.png" class="color">
+                       <img src="assets/images/ic_attendant-list.png" class="selected">
+                        Allocated Class
+                    </a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+        	<div class="overlay" onclick="closeOverlay()"></div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container-fluid">
+
+                  
+
+                  <!--   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button> -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+	                        <i class="fas fa-align-left"></i>
+	                        <span>Toggle Sidebar</span>
+	                    </button>
+                        <div class="d-none d-md-block">
+                             <div class="dropdown-div">
+                                 <div class="form-group">
+                                    <select class="form-control icon_control dropdown_control">
+                                        <option selected>School Name</option>
+                                        <option>name</option>
+                                    </select>
+                                </div>
+                                 <div class="form-group">
+                                    <select class="form-control icon_control dropdown_control">
+                                        <option selected>School Year</option>
+                                        <option>School Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+                            </li>
+                           
+	                        <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <img src="assets/images/ic_bell.png">
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						          <a class="dropdown-item" href="#">Action</a>
+						          <a class="dropdown-item" href="#">Another action</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Something else here</a>
+						        </div>
+						    </li>	
+						    <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <div class="profile-cover">
+						          	<img src="assets/images/img7.png">
+						          </div>
+						          <i class="fas fa-chevron-down right-arrow"></i>
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+						          <a class="dropdown-item" href="#">Action</a>
+						          <a class="dropdown-item" href="#">Another action</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Something else here</a>
+						        </div>
+						    </li>				    
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <div class="section">
+            	<div class="container-fluid">
+            		<div class="row">
+            			<div class="col-md-12">
+                        <div class="d-block d-sm-none">
+                             <div class="dropdown-div small-device">
+                                 <div class="form-group">
+                                    <select class="form-control icon_control dropdown_control">
+                                        <option selected>School Name</option>
+                                        <option>name</option>
+                                    </select>
+                                </div>
+                                 <div class="form-group">
+                                    <select class="form-control icon_control dropdown_control">
+                                        <option selected>School Year</option>
+                                        <option>School Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="graph">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                         <div class="form-group inline_label">
+                                            <label for="staticEmail" class="col-lg-4 col-form-label">Allocated Class :</label>
+                                                <select class="form-control icon_control dropdown_control">
+                                                    <option selected>All</option>
+                                                    <option>Option1</option>
+                                                </select>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                         <div class="form-group inline_label">
+                                            <label for="staticEmail" class="col-lg-4 col-form-label">Allocated Class :</label>
+                                                <select class="form-control icon_control dropdown_control">
+                                                    <option selected>All</option>
+                                                    <option>Option1</option>
+                                                </select>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            			
+            		</div>
+            	</div>
+            </div>
+
+        </div>
+    </div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>

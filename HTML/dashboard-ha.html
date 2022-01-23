@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+	<div class="inner-container" id="contents" style="opacity: 0;"> 
+		<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <h3>Hertronic</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+            	 <li class="active">
+                    <a href="#">
+                       <img src="assets/images/ic_dashoard_color.png" class="color">
+                       <img src="assets/images/ic_dashoard.png" class="selected">
+                        Dashboard
+                    </a>
+                </li>
+                <li>                  
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <img src="assets/images/ic_menu_color.png" class="color">
+                       <img src="assets/images/ic_menu.png" class="selected">
+                        User Management
+                        <i class="fas fa-chevron-down right-arrow"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Ministry Super Admin</a>
+                        </li>
+                        <li>
+                            <a href="#">Login as</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                	<a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <img src="assets/images/ic_cart_color.png" class="color">
+                       <img src="assets/images/ic_cart.png" class="selected">
+                        Masters
+                        <i class="fas fa-chevron-down right-arrow"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+                        <li>
+                            <a href="#">Education & Academic Degree</a>
+                        </li>
+                        <li>
+                            <a href="#">Job & Work</a>
+                        </li>
+                        <li>
+                            <a href="#">Countries</a>
+                        </li>
+                         <li>
+                            <a href="#">States</a>
+                        </li>
+                         <li>
+                            <a href="#">Canton</a>
+                        </li>
+                         <li>
+                            <a href="#">Ownership Types</a>
+                        </li>
+                         <li>
+                            <a href="#">Universities</a>
+                        </li>
+                         <li>
+                            <a href="#">Colleges</a>
+                        </li>
+                         <li>
+                            <a href="#">National Education Plan </a>
+                        </li>
+                         <li>
+                            <a href="#">Education Profile</a>
+                        </li>
+                         <li>
+                            <a href="#">Qulification Degree</a>
+                        </li>
+                    </ul>                   
+                </li>
+                 <li>
+                	<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <img src="assets/images/ic_lock_color.png" class="color">
+                       <img src="assets/images/ic_lock.png" class="selected">
+                        Ministry Masters
+                        <i class="fas fa-chevron-down right-arrow"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">Schools</a>
+                        </li>
+                        <li>
+                            <a href="#">Teachers</a>
+                        </li>
+                        <li>
+                            <a href="#">Students</a>
+                        </li>
+                        <li>
+                            <a href="#">Education Plan</a>
+                        </li>
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">Classes</a>
+                        </li>
+                        <li>
+                            <a href="#">Village School</a>
+                        </li>
+                    </ul>                   
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="assets/images/ic_reports_color.png" class="color">
+                       <img src="assets/images/ic_reports.png" class="selected">
+                        Report
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/ic_logs_color.png" class="color">
+                       	<img src="assets/images/ic_logs.png" class="selected">
+                        Logs
+                    </a>
+                </li>
+            </ul>
+            <div class="bottom-link">
+            	<a href="#x" class="help-link"><img src="assets/images/ic_comment.png" >Help?</a>
+            	<a href="#x" class="logout"><img src="assets/images/ic_logout.png" ></a>
+            </div>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+        	<div class="overlay" onclick="closeOverlay()"></div>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container-fluid">
+
+                  
+
+                  <!--   <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button> -->
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+	                        <i class="fas fa-align-left"></i>
+	                        <span>Toggle Sidebar</span>
+	                    </button>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+                            </li>
+                           
+	                        <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <img src="assets/images/ic_bell.png">
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						          <a class="dropdown-item" href="#">Profile</a>
+						          <a class="dropdown-item" href="#">Setting</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Logout</a>
+						        </div>
+						    </li>	
+						    <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <div class="profile-cover">
+						          	<img src="assets/images/img7.png">
+						          </div>
+						          <i class="fas fa-chevron-down right-arrow"></i>
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+						           <a class="dropdown-item" href="#">Profile</a>
+						          <a class="dropdown-item" href="#">Setting</a>
+						          <div class="dropdown-divider"></div>
+						          <a class="dropdown-item" href="#">Logout</a>
+						        </div>
+						    </li>				    
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <div class="section">
+            	<div class="container-fluid">
+            		<div class="row">
+            			<div class="col-md-12">
+            				<h2 class="title">Dashboard</h2>
+            			</div>
+            			<div class="col-lg-4 col-md-6">
+            				<a href="#x">
+	            				<div class="card-dashboard">
+		            				<p>Students</p>
+		            				<h3>2,560</h3>
+		            				<img src="assets/images/ic_shape2.png">
+		            			</div>
+		            		</a>
+            			</div>
+            			<div class="col-lg-4 col-md-6">
+            				<a href="#x">
+	            				<div class="card-dashboard">
+		            				<p>Super Admin</p>
+		            				<h3>20</h3>
+		            				<img src="assets/images/ic_shape3.png">
+		            			</div>
+		            		</a>
+            			</div>
+            			<div class="col-lg-4 col-md-6">
+            				<a href="#x">
+	            				<div class="card-dashboard">
+		            				<p>Parents</p>
+		            				<h3>3560</h3>
+		            				<img src="assets/images/ic_shape4.png">
+		            			</div>
+		            		</a>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+
+            <div class="section">
+            	<div class="container-fluid">
+            		<div class="row">
+	            		<div class="col-lg-4 col-md-12">
+	            			<p class="caps-head">Teachers</p>
+	            			<div class="teachers">
+		            			<div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-cover ">
+						        	<img src="assets/images/img7.png">
+						        </div>
+						        <div class="profile-link">
+						        	<a href="#x">+12 more</a>
+						        </div>
+						    </div>
+						    <div class="graph mt-4">
+	            				<img src="assets/images/graph1.png">
+	            			</div>
+	            		</div>
+	            		<div class="col-lg-8 col-md-12">
+	            			<div class="graph">
+	            				<img src="assets/images/graph.png">
+	            			</div>
+	            		</div>
+	            	</div>
+            	</div>
+            </div>
+
+        </div>
+    </div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>

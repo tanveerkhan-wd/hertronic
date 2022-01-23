@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+	<div class="auth_container" id="contents" style="opacity: 0;">
+		<div class="container">
+			<div class="auth_logo text-center">
+				<img src="assets/images/ic_login_logo.png" alt="Hetronic Logo" class="login_logo">
+			</div>
+			<div class="auth_box">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-10">
+						<h1>Login</h1>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="text" name="" class="form-control" placeholder="Enter Email">
+							<p class="error_msg">Please enter an valid email</p>
+						</div>
+						<div class="form-group">
+							<label>Password</label>
+							<input type="text" name="" class="form-control" placeholder="Enter Password">
+							<p class="error_msg">That’s not the right password. Please try again or a request a new one.</p>
+						</div>
+						<div class="text-center">
+							<button class="theme_btn auth_btn">Login</button>
+							<p><a href="forgot.html" class="auth_link">Forgot Password?</a></p>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+				</div>
+				<img src="assets/images/ic_login_shape1.png" class="login_botton_shape">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+
+	    
+
+		// $(window).load(function() {
+		//         $(".preloader").fadeOut("slow");
+		// });
+	</script>	
+</body>
+</html>

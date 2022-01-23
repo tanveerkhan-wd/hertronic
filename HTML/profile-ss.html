@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile -SS - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div class="inner-container">
+		<div class="wrapper">
+	        <!-- Sidebar  -->
+	        <nav id="sidebar" class="">
+	            <div class="sidebar-header">
+	                <h3>Hertronic</h3>
+	            </div>
+				<ul class="list-unstyled components">
+	            	 <li class="active">
+	                    <a href="#">
+	                       <img src="assets/images/ic_dashoard_color.png" class="color">
+	                       <img src="assets/images/ic_dashoard.png" class="selected">
+	                        Dashboard
+	                    </a>
+	                </li>
+	                <li>                  
+	                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_menu_color.png" class="color">
+	                       <img src="assets/images/ic_menu.png" class="selected">
+	                        User Management
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                	<a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_cart_color.png" class="color">
+	                       <img src="assets/images/ic_cart.png" class="selected">
+	                        Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                 <li>
+	                	<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_lock_color.png" class="color">
+	                       <img src="assets/images/ic_lock.png" class="selected">
+	                        Ministry Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                <li>
+	                    <a href="#">
+	                       <img src="assets/images/ic_reports_color.png" class="color">
+	                       <img src="assets/images/ic_reports.png" class="selected">
+	                        Report
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="assets/images/ic_logs_color.png" class="color">
+	                       	<img src="assets/images/ic_logs.png" class="selected">
+	                        Logs
+	                    </a>
+	                </li>
+	            </ul>
+			</nav>
+
+	        <!-- Page Content  -->
+	        <div id="content">
+	        	<div class="overlay" onclick="closeOverlay()"></div>
+	            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	                <div class="container-fluid">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+		                        <i class="fas fa-align-left"></i>
+		                        <span>Toggle Sidebar</span>
+		                    </button>
+	                        <ul class="nav navbar-nav ml-auto">
+	                            <li class="nav-item active">
+	                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+	                            </li>
+	                           
+		                        <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <img src="assets/images/ic_bell.png">
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							          <a class="dropdown-item" href="#">Action</a>
+							          <a class="dropdown-item" href="#">Another action</a>
+							          <div class="dropdown-divider"></div>
+							          <a class="dropdown-item" href="#">Something else here</a>
+							        </div>
+							    </li>	
+							    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <div class="profile-cover">
+							          	<img src="assets/images/img7.png">
+							          </div>
+							          <i class="fas fa-chevron-down right-arrow"></i>
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							          <a class="dropdown-item" href="#">Action</a>
+							          <a class="dropdown-item" href="#">Another action</a>
+							          <div class="dropdown-divider"></div>
+							          <a class="dropdown-item" href="#">Something else here</a>
+							        </div>
+							    </li>				    
+
+	                        </ul>
+	                        
+	                    </div>
+	                </div>
+	            </nav>
+				<div class="section">
+	            	<div class="container-fluid">
+						<h5 class="title">My Profile</h5>
+	                    <div class="white_box">
+	                        <div class="theme_tab">
+	                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+	                                <li class="nav-item">
+	                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">General Information</a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link" id="Current-tab" data-toggle="tab" href="#Current" role="tab" aria-controls="Current" aria-selected="true">Current Information</a>
+	                                </li>
+	                            </ul>
+	                            <div class="tab-content" id="myTabContent">
+	                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+	                                    <div class="inner_tab" id="profile_detail">
+	                                        <div class="row">
+	                                            <div class="col-lg-1"></div>
+	                                            <div class="col-lg-10">
+	                                                <div class="text-center">
+	                                                    <div class="profile_box">
+	                                                        <div class="profile_pic">
+	                                                            <img src="assets/images/user.png">
+	                                                        </div>
+	                                                    </div>
+	                                                    <h5 class="profile_name">John Smith</h5>
+	                                                    <p class="profile_mail">john.smith@gmail.com</p>
+	                                                </div>
+	                                                <div class="profile_info_container">
+	                                                    <div class="row">
+	                                                    	<div class="col-12">
+	                                                    		<h6 class="profile_inner_title">General Inforamation</h6>
+	                                                    	</div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">ID :</p>
+	                                                                <p class="value">703xxxxxxx2412</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Gender :</p>
+	                                                                <p class="value">Male</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">DOB :</p>
+	                                                                <p class="value">03/7/1995</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Place of Birth :</p>
+	                                                                <p class="value">Ahmedabad</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Phone :</p>
+	                                                                <p class="value">91xxxxxx12</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Main Book No :</p>
+	                                                                <p class="value">0001</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Order No:</p>
+	                                                                <p class="value">241203</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Father’s Name :</p>
+	                                                                <p class="value">Jonny Smith</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Mother’s Name :</p>
+	                                                                <p class="value">Lisa Smith</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Father’s Job :</p>
+	                                                                <p class="value">Gov. Job</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Mother’s Job :</p>
+	                                                                <p class="value">Web Developer</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Municipality :</p>
+	                                                                <p class="value">RMC</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Nationality :</p>
+	                                                                <p class="value">Indian</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Citizenship :</p>
+	                                                                <p class="value">Indian</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Postal Code :</p>
+	                                                                <p class="value">360001</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Parent’s Phone No. :</p>
+	                                                                <p class="value">91xxxxxx24</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Parent’s Email :</p>
+	                                                                <p class="value">jonny@gmail.com</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Address :</p>
+	                                                                <p class="value">24, ANC Complex, University Road, Rajkot</p>
+	                                                            </div>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn" id="edit_profile">Edit Profile</button>
+	                                                    <button class="theme_btn" data-toggle="modal" data-target="#change_pass">Change Password</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-1"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="inner_tab" id="edit_profile_detail" style="display: none;">
+	                                    	<div class="row">
+	                                            <div class="col-lg-3"></div>
+	                                            <div class="col-lg-6">
+	                                                <div class="text-center">
+	                                                    <div class="profile_box">
+	                                                        <div class="profile_pic">
+	                                                            <img src="assets/images/user.png">
+	                                                        </div>
+	                                                        <div class="edit_pencile">
+	                                                        	<img src="assets/images/ic_pen.png">
+	                                                        	<input type="file" name="">
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="">
+	                                                    <div class="form-group">
+                                                        	<label>Student Name*</label>
+                                                        	<input type="text" name="" class="form-control" value="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Student Surname*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Surname">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Student ID*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Temp. Citizen ID*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Citizen id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Gender</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+
+                                                        		<option selected>Select Gender</option>
+                                                        		<option>Male</option>
+                                                        		<option>Female</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Date of Birth</label>
+                                                        	<input type="text" name="" class="form-control icon_control date_control" value="03/7/1995">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Place of Birth*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Place of birth">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Municipality*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Municipality</option>
+                                                        		<option>Select Municipality</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Nationality*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Nationality</option>
+                                                        		<option>Select Nationality</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Citizenship*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Citizenship</option>
+                                                        		<option>Select Citizenship</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Address</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Address">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Phone*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Phone number">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Postal Code*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select postal code</option>
+                                                        		<option>Select postal code</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Main Book No.*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Main Book No.">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Order No. in Main Book*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Oder Number">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Father’s Name*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Father’s Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Mother’s Name</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Father’s Job</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Job</option>
+                                                        		<option>Select Job</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Mother's Job</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Job</option>
+                                                        		<option>Select Job</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Parent’s Email</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Email'">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Parent’s Phone No.</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enetr Phone number">
+                                                        </div>
+													</div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn">Submit</button>
+	                                                    <button class="theme_btn red_btn">Cancel</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-3"></div>
+	                                        </div>
+	                                        
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade show" id="Current" role="tabpanel" aria-labelledby="Current-tab">
+	                                    <div class="inner_tab" id="profile_detail2">
+	                                        <div class="row">
+	                                            <div class="col-lg-1"></div>
+	                                            <div class="col-lg-10">
+	                                                <div class="profile_info_container">
+	                                                    <div class="row">
+	                                                    	<div class="col-12">
+	                                                    		<h6 class="profile_inner_title">Current School Inforamation</h6>
+	                                                    	</div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Current School Name :</p>
+	                                                                <p class="value">Noble High School</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Homeroom Teacher :</p>
+	                                                                <p class="value">Anne-Marije Markink</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Education Program :</p>
+	                                                                <p class="value">Basic - Music</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Class :</p>
+	                                                                <p class="value">1A</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Grade :</p>
+	                                                                <p class="value">5</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">School Contact No. :</p>
+	                                                                <p class="value">92xxxxxx03</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-4">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Date of Enrollment :</p>
+	                                                                <p class="value">24/6/2019</p>
+	                                                            </div>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn" id="edit_profile2">Edit Profile</button>
+	                                                    <button class="theme_btn" data-toggle="modal" data-target="#change_pass">Change Password</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-1"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="inner_tab" id="edit_profile_detail2" style="display: none;">
+	                                        <div class="row">
+	                                            <div class="col-lg-3"></div>
+	                                            <div class="col-lg-6">
+	                                                
+	                                                <div class="">
+	                                                    <div class="form-group">
+                                                        	<label>Current School Name</label>
+                                                        	<input type="text" name="" class="form-control" value="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Homeroom Teacher</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Homeroom Teacher">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Education Program</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Class</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Class">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Grade</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Grade">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>School Contact No.</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter School Contact No.">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Date of Enrollment </label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Date of Enrollment">
+                                                        </div>
+                                                    </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn">Submit</button>
+	                                                    <button class="theme_btn red_btn">Cancel</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-3"></div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	       			</div>
+	            </div>
+	        </div>
+    	</div>
+
+		<!-- change password Modal -->
+		<div class="theme_modal modal fade" id="change_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-body">
+				    	<img src="assets/images/ic_close_bg.png" class="modal_top_bg">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<img src="assets/images/ic_close_circle_white.png">
+				          <!-- <span aria-hidden="true">&times;</span> -->
+				        </button>
+				        <div class="row">
+				        	<div class="col-lg-1"></div>
+				        	<div class="col-lg-10">
+				       			<h5 class="modal-title" id="exampleModalCenterTitle">Change Password</h5>
+				        		<div class="form-group">
+				        			<label>Old Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="form-group">
+				        			<label>New Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="form-group">
+				        			<label>Confirm Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="text-center modal_btn	">
+				        			<button type="button" class="theme_btn" data-dismiss="modal">Submit</button>
+				        		</div>
+				        	</div>
+				        	<div class="col-lg-1"></div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>

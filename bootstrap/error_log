@@ -1,0 +1,8 @@
+[13-Apr-2020 08:38:20 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hertroni/gaudeamus.hertronic.com/hertronic/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hertroni/gaudeamus.hertronic.com/hertronic/bootstrap/app.php on line 14
+[13-Apr-2020 08:38:23 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/hertroni/gaudeamus.hertronic.com/hertronic/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hertroni/gaudeamus.hertronic.com/hertronic/bootstrap/app.php on line 14

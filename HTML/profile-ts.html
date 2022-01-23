@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile -TS - Hetronic</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom-rt.css">
+</head>
+<body>
+	<div class="inner-container">
+		<div class="wrapper">
+	        <!-- Sidebar  -->
+	        <nav id="sidebar" class="">
+	            <div class="sidebar-header">
+	                <h3>Hertronic</h3>
+	            </div>
+				<ul class="list-unstyled components">
+	            	 <li class="active">
+	                    <a href="#">
+	                       <img src="assets/images/ic_dashoard_color.png" class="color">
+	                       <img src="assets/images/ic_dashoard.png" class="selected">
+	                        Dashboard
+	                    </a>
+	                </li>
+	                <li>                  
+	                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_menu_color.png" class="color">
+	                       <img src="assets/images/ic_menu.png" class="selected">
+	                        User Management
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li>
+	                	<a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_cart_color.png" class="color">
+	                       <img src="assets/images/ic_cart.png" class="selected">
+	                        Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                 <li>
+	                	<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+	                       <img src="assets/images/ic_lock_color.png" class="color">
+	                       <img src="assets/images/ic_lock.png" class="selected">
+	                        Ministry Masters
+	                        <i class="fas fa-chevron-down right-arrow"></i>
+	                    </a>
+	                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+	                        <li>
+	                            <a href="#">Page 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Page 3</a>
+	                        </li>
+	                    </ul>                   
+	                </li>
+	                <li>
+	                    <a href="#">
+	                       <img src="assets/images/ic_reports_color.png" class="color">
+	                       <img src="assets/images/ic_reports.png" class="selected">
+	                        Report
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <img src="assets/images/ic_logs_color.png" class="color">
+	                       	<img src="assets/images/ic_logs.png" class="selected">
+	                        Logs
+	                    </a>
+	                </li>
+	            </ul>
+			</nav>
+
+	        <!-- Page Content  -->
+	        <div id="content">
+	        	<div class="overlay" onclick="closeOverlay()"></div>
+	            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	                <div class="container-fluid">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	                    	<button type="button" id="sidebarCollapse" class="btn btn-info">
+		                        <i class="fas fa-align-left"></i>
+		                        <span>Toggle Sidebar</span>
+		                    </button>
+	                        <ul class="nav navbar-nav ml-auto">
+	                            <li class="nav-item active">
+	                                <a class="nav-link" href="#"> <img src="assets/images/ic_search.png"></a>
+	                            </li>
+	                           
+		                        <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <img src="assets/images/ic_bell.png">
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							          <a class="dropdown-item" href="#">Action</a>
+							          <a class="dropdown-item" href="#">Another action</a>
+							          <div class="dropdown-divider"></div>
+							          <a class="dropdown-item" href="#">Something else here</a>
+							        </div>
+							    </li>	
+							    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							          <div class="profile-cover">
+							          	<img src="assets/images/img7.png">
+							          </div>
+							          <i class="fas fa-chevron-down right-arrow"></i>
+							        </a>
+							        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							          <a class="dropdown-item" href="#">Action</a>
+							          <a class="dropdown-item" href="#">Another action</a>
+							          <div class="dropdown-divider"></div>
+							          <a class="dropdown-item" href="#">Something else here</a>
+							        </div>
+							    </li>				    
+
+	                        </ul>
+	                        
+	                    </div>
+	                </div>
+	            </nav>
+				<div class="section">
+	            	<div class="container-fluid">
+						<h5 class="title">My Profile</h5>
+	                    <div class="white_box">
+	                        <div class="theme_tab">
+	                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+	                                <li class="nav-item">
+	                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">General Information</a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link" id="Current-tab" data-toggle="tab" href="#Current" role="tab" aria-controls="Current" aria-selected="true">Qualifications</a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Work Experience</a>
+	                                </li>
+	                            </ul>
+	                            <div class="tab-content" id="myTabContent">
+	                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+	                                    <div class="inner_tab" id="profile_detail">
+	                                        <div class="row">
+	                                            <div class="col-lg-1"></div>
+	                                            <div class="col-lg-10">
+	                                                <div class="text-center">
+	                                                    <div class="profile_box">
+	                                                        <div class="profile_pic">
+	                                                            <img src="assets/images/user.png">
+	                                                        </div>
+	                                                    </div>
+	                                                    <h5 class="profile_name">Freddy Kauschke</h5>
+	                                                    <p class="profile_mail">freddy.kauschke@gmail.ccom</p>
+	                                                </div>
+	                                                <div class="profile_info_container">
+	                                                    <div class="row">
+	                                                    	<div class="col-12">
+	                                                    		<h6 class="profile_inner_title">General Inforamation</h6>
+	                                                    	</div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">ID :</p>
+	                                                                <p class="value">703xxxxxxx2412</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Gender :</p>
+	                                                                <p class="value">Male</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">DOB :</p>
+	                                                                <p class="value">03/7/1995</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Place of Birth :</p>
+	                                                                <p class="value">Ahmedabad</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Phone :</p>
+	                                                                <p class="value">91xxxxxx12</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Designation :</p>
+	                                                                <p class="value">Physics Teacher</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Municipality :</p>
+	                                                                <p class="value">RMC</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Nationality :</p>
+	                                                                <p class="value">Indian</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Citizenship :</p>
+	                                                                <p class="value">Indian</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Postal Code :</p>
+	                                                                <p class="value">360001</p>
+	                                                            </div>
+	                                                        </div>
+	                                                        <div class="col-md-6 col-lg-3">
+	                                                            <div class="form-group">
+	                                                                <p class="label">Address :</p>
+	                                                                <p class="value">24, AMNC Complex, University Road, Rajkot</p>
+	                                                            </div>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn" id="edit_profile">Edit Profile</button>
+	                                                    <button class="theme_btn" data-toggle="modal" data-target="#change_pass">Change Password</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-1"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="inner_tab" id="edit_profile_detail" style="display: none;">
+	                                    	<div class="row">
+	                                            <div class="col-lg-3"></div>
+	                                            <div class="col-lg-6">
+	                                                <div class="text-center">
+	                                                    <div class="profile_box">
+	                                                        <div class="profile_pic">
+	                                                            <img src="assets/images/user.png">
+	                                                        </div>
+	                                                        <div class="edit_pencile">
+	                                                        	<img src="assets/images/ic_pen.png">
+	                                                        	<input type="file" name="">
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                                <div class="">
+	                                                    <div class="form-group">
+                                                        	<label>Teacher Name*</label>
+                                                        	<input type="text" name="" class="form-control" value="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Teacher Surname*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Surname">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Teacher ID*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enetr id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Temp. Citizen ID*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Citizen id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Gender</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+																<option selected>Select Gender</option>
+                                                        		<option>Male</option>
+                                                        		<option>Female</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Date of Birth</label>
+                                                        	<input type="text" name="" class="form-control icon_control date_control" placeholder="Enetr date of birth">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Place of Birth*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enetr Place of birth">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Municipality*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+																<option selected>Select Municipality</option>
+                                                        		<option>Select Municipality</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Nationality*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Nationality</option>
+                                                        		<option>Select Nationality</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Citizenship*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Citizenship</option>
+                                                        		<option>Select Citizenship</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Address</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Address">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Phone*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enetr Phone number">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Email*</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Postal Code*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select postal code</option>
+                                                        		<option>Select postal code</option>
+                                                        	</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Designation*</label>
+                                                        	<select class="form-control icon_control dropdown_control">
+                                                        		<option selected>Select Designation</option>
+                                                        		<option>Select Designation</option>
+                                                        	</select>
+                                                        </div>
+                                                    </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn">Upload</button>
+	                                                    <button class="theme_btn red_btn">Cancel</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-3"></div>
+	                                        </div>
+	                                        
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade show" id="Current" role="tabpanel" aria-labelledby="Current-tab">
+	                                    <div class="inner_tab" id="profile_detail2">
+	                                        <div class="row">
+	                                            <div class="col-lg-1"></div>
+	                                            <div class="col-lg-10">
+	                                                <div class="profile_info_container">
+	                                                    <div class="row">
+	                                                    	<div class="col-12">
+	                                                    		<h6 class="profile_inner_title">Education Qualifications</h6>
+	                                                    	</div>
+	                                                    	<div class="col-12">
+	                                                    		<div class="table-responsive">
+	                                                    			<table class="profile_table">
+	                                                    				<tbody>
+	                                                    					<tr>
+	                                                    						<td>1</td>
+	                                                    						<td><p class="label">Faculty (College) :*</p>
+	                                                                			<p class="value">DE - CE</p></td>
+	                                                                			<td>
+	                                                                				<p class="label">University :</p>
+	                                                                			<p class="value">GTU</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Year of passing :</p>
+	                                                                			<p class="value">2015</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Document :</p>
+	                                                                			<p class="value"><a href="#">Certificate.pdf</a></p>
+	                                                                			</td>
+	                                                    					</tr>
+	                                                    					<tr>
+	                                                    						<td>2</td>
+	                                                    						<td><p class="label">Faculty (College) :*</p>
+	                                                                			<p class="value">DE - CE</p></td>
+	                                                                			<td>
+	                                                                				<p class="label">University :</p>
+	                                                                			<p class="value">GTU</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Year of passing :</p>
+	                                                                			<p class="value">2015</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Document :</p>
+	                                                                			<p class="value"><a href="#">Certificate.pdf</a></p>
+	                                                                			</td>
+	                                                    					</tr>
+	                                                    					
+	                                                    				</tbody>
+	                                                    			</table>
+	                                                    		</div>
+	                                                    	</div>
+	                                                        
+	                                                    </div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn" id="edit_profile2">Edit Profile</button>
+	                                                    <button class="theme_btn">Change Password</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-1"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="inner_tab" id="edit_profile_detail2" style="display: none;">
+	                                        <div class="row">
+	                                            <div class="col-lg-3"></div>
+	                                            <div class="col-lg-6">
+	                                                
+	                                                <div class="profile_info_container">
+	                                                	<div class="row">
+	                                                		<div class="col-12 text-right">
+	                                                			<img src="assets/images/ic_close_circle.png" class="close_img">
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Faculty (College) :*</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>Faculty</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>University :</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>University</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Year of passing :</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>Year</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Document :</label>
+	                                                			<div class="upload_file">
+		                                                			<input type="text" name="" value="Upload" class="form-control">
+		                                                			<input type="file" name="" >
+		                                                		</div>
+	                                                		</div>
+	                                                	</div>
+	                                                </div>
+	                                                <div class="profile_info_container">
+	                                                	<div class="row">
+	                                                		<div class="col-12 text-right">
+	                                                			<img src="assets/images/ic_close_circle.png" class="close_img">
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Faculty (College) :*</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>Faculty</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>University :</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>University</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Year of passing :</label>
+	                                                			<select class="form-control icon_control dropdown_control">
+	                                                				<option selected>Year</option>
+	                                                			</select>
+	                                                		</div>
+	                                                		<div class="form-group col-md-6">
+	                                                			<label>Document :</label>
+	                                                			<div class="upload_file">
+		                                                			<input type="text" name="" value="Upload" class="form-control">
+		                                                			<input type="file" name="" >
+		                                                		</div>
+	                                                		</div>
+	                                                	</div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn">Update</button>
+	                                                    <button class="theme_btn red_btn">Cancel</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-3"></div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="tab-pane fade show" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+	                                    <div class="inner_tab" id="profile_detail2">
+	                                        <div class="row">
+	                                            <div class="col-lg-1"></div>
+	                                            <div class="col-lg-10">
+	                                                <div class="profile_info_container">
+	                                                    <div class="row">
+	                                                    	<div class="col-12">
+	                                                    		<h6 class="profile_inner_title">Work Experience</h6>
+	                                                    	</div>
+	                                                    	<div class="col-12">
+	                                                    		<div class="table-responsive">
+	                                                    			<table class="profile_table">
+	                                                    				<tbody>
+	                                                    					<tr>
+	                                                    						<td>1</td>
+	                                                    						<td><p class="label">Noble High School :</p>
+	                                                                			<p class="value">Physics Teacher</p>
+	                                                                			<br>
+	                                                                			<p class="label">Type of Engagement :</p>
+	                                                                			<p class="value">Full Time</p>
+	                                                                			</td>
+	                                                                			<td><p class="label">Date of Engagement :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			<br>
+	                                                                			<p class="label">Hourly Rate :</p>
+	                                                                			<p class="value">100</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Date of Engagement End :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			</td>
+	                                                                		</tr>
+	                                                    					<tr>
+	                                                    						<td>2</td>
+	                                                    						<td><p class="label">Noble High School :</p>
+	                                                                			<p class="value">Physics Teacher</p>
+	                                                                			<br>
+	                                                                			<p class="label">Type of Engagement :</p>
+	                                                                			<p class="value">Full Time</p>
+	                                                                			</td>
+	                                                                			<td><p class="label">Date of Engagement :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			<br>
+	                                                                			<p class="label">Hourly Rate :</p>
+	                                                                			<p class="value">100</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Date of Engagement End :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			</td>
+	                                                                		</tr>
+	                                                                		<tr>
+	                                                    						<td>3</td>
+	                                                    						<td><p class="label">Noble High School :</p>
+	                                                                			<p class="value">Physics Teacher</p>
+	                                                                			<br>
+	                                                                			<p class="label">Type of Engagement :</p>
+	                                                                			<p class="value">Full Time</p>
+	                                                                			</td>
+	                                                                			<td><p class="label">Date of Engagement :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			<br>
+	                                                                			<p class="label">Hourly Rate :</p>
+	                                                                			<p class="value">100</p>
+	                                                                			</td>
+	                                                                			<td>
+	                                                                				<p class="label">Date of Engagement End :</p>
+	                                                                			<p class="value">24/12/2019</p>
+	                                                                			</td>
+	                                                                		</tr>
+	                                                    				</tbody>
+	                                                    			</table>
+	                                                    		</div>
+	                                                    	</div>
+	                                                        
+	                                                    </div>
+	                                                </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn" id="">Edit Profile</button>
+	                                                    <button class="theme_btn">Change Password</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-1"></div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="inner_tab" id="edit_profile_detail2" style="display: none;">
+	                                        <div class="row">
+	                                            <div class="col-lg-3"></div>
+	                                            <div class="col-lg-6">
+	                                                
+	                                                <div class="">
+	                                                    <div class="form-group">
+                                                        	<label>Current School Name</label>
+                                                        	<input type="text" name="" class="form-control" value="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Homeroom Teacher</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Homeroom Teacher">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Education Program</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter id">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Class</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Class">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Grade</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Grade">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>School Contact No.</label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter School Contact No.">
+                                                        </div>
+                                                        <div class="form-group">
+                                                        	<label>Date of Enrollment </label>
+                                                        	<input type="text" name="" class="form-control" placeholder="Enter Date of Enrollment">
+                                                        </div>
+                                                    </div>
+	                                                <div class="text-center">
+	                                                    <button class="theme_btn">Submit</button>
+	                                                    <button class="theme_btn red_btn">Cancel</button>
+	                                                </div>
+	                                            </div>
+	                                            <div class="col-lg-3"></div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	       			</div>
+	            </div>
+	        </div>
+    	</div>
+
+		<!-- change password Modal -->
+		<div class="theme_modal modal fade" id="change_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				    <div class="modal-body">
+				    	<img src="assets/images/ic_close_bg.png" class="modal_top_bg">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<img src="assets/images/ic_close_circle_white.png">
+				          <!-- <span aria-hidden="true">&times;</span> -->
+				        </button>
+				        <div class="row">
+				        	<div class="col-lg-1"></div>
+				        	<div class="col-lg-10">
+				       			<h5 class="modal-title" id="exampleModalCenterTitle">Change Password</h5>
+				        		<div class="form-group">
+				        			<label>Old Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="form-group">
+				        			<label>New Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="form-group">
+				        			<label>Confirm Password *</label>
+				        			<input type="text" name="" class="form-control pass_control icon_control" placeholder="******">
+				        		</div>
+				        		<div class="text-center modal_btn	">
+				        			<button type="button" class="theme_btn" data-dismiss="modal">Submit</button>
+				        		</div>
+				        	</div>
+				        	<div class="col-lg-1"></div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.js"></script>	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>	
+	<script type="text/javascript">
+		wow = new WOW({
+	        animateClass: 'animated',
+	        offset:       100,
+	        callback:     function(box) {
+	          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	        }
+	    });
+	    wow.init();
+
+	</script>
+	<script type="text/javascript">
+        
+    </script>	
+</body>
+</html>
